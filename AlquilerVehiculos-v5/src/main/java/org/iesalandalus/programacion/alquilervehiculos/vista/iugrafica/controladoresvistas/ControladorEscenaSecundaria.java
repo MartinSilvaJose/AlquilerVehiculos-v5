@@ -219,10 +219,10 @@ public class ControladorEscenaSecundaria {
 	    	if(fecha!=null) {
 	    		try {
 	    			
-		    		alquiler.setFechaDevolucion(fecha);
+		    		controladorMVC.devolver(alquiler.getCliente(), fecha);
 		    		Dialogos.mostrarDialogoInformacion("Devolver Alquiler", "Se ha establecido la fecha de devolución correctamente");
 		    		salir(btnMEstadisticasYDevolver);
-				} catch (IllegalArgumentException e) {
+				} catch (IllegalArgumentException | OperationNotSupportedException | NullPointerException e) {
 					Dialogos.mostrarDialogoError("Devolver Alquiler",e.getMessage());
 				}
 	    	}else {

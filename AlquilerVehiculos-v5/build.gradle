@@ -16,6 +16,11 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+	
+	//MongoDB
+    //maven {
+        
+        //url "https://repo.mongodb.org/maven2/"
     
     // Repositorio jitpack.io donde están los accesos a las versiones de la librería entrada desde github
     maven { url 'https://jitpack.io' }
@@ -27,6 +32,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
     testImplementation 'org.junit.platform:junit-platform-suite-api:1.9.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-suite-engine:1.9.1'
+    
+    //MongoDB
+    implementation 'org.mongodb:mongodb-driver-sync:4.4.1'
     
     // Mockito
     testImplementation "org.mockito:mockito-core:+"

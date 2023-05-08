@@ -10,6 +10,7 @@ import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Vehiculo;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.*;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.FuenteDatosFicheros;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.memoria.FuenteDatosMemoria;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.mongodb.FactoriaFuenteDatosMongoDB;
 public abstract class Modelo {
 	
 	//DECLARACION
@@ -50,6 +51,11 @@ public abstract class Modelo {
 			clientes=FactoriaFuenteDatos.FICHEROS.crear().crearClientes();
 			alquileres=FactoriaFuenteDatos.FICHEROS.crear().crearAlquileres();
 			vehiculos=FactoriaFuenteDatos.FICHEROS.crear().crearVehiculos();
+		}
+		if(fuenteDatos instanceof FactoriaFuenteDatosMongoDB) {
+			clientes=FactoriaFuenteDatos.MONGODB.crear().crearClientes();
+			alquileres=FactoriaFuenteDatos.MONGODB.crear().crearAlquileres();
+			vehiculos=FactoriaFuenteDatos.MONGODB.crear().crearVehiculos();
 		}
 	}
 	//INSERTAR

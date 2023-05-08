@@ -73,9 +73,9 @@ public abstract class Vehiculo {
 		if(matricula==null) {
 			throw new NullPointerException("ERROR: La matrícula no puede ser nula.");
 		}
-		if(!matricula.matches(ER_MATRICULA)) {
-			throw new IllegalArgumentException("ERROR: La matrícula no tiene un formato válido.");
-		}
+//		if(!matricula.matches(ER_MATRICULA)) {
+//			throw new IllegalArgumentException("ERROR: La matrícula no tiene un formato válido.");
+//		}
 		String letras=matricula.toUpperCase().substring(4, 7);
 		matricula=matricula.substring(0, 4)+letras;
 		this.matricula = matricula;
