@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Vehiculos>
+    <Vehiculo Matricula="8335JGW" Tipo="Autobus">
+        <Marca TipoDato="String">Artobus</Marca>
+        <Modelo TipoDato="String">DelPino</Modelo>
+        <Autobus>
+            <Plazas TipoDato="Integer">100</Plazas>
+        </Autobus>
+    </Vehiculo>
+    <Vehiculo Matricula="8336JGW" Tipo="Furgoneta">
+        <Marca TipoDato="String">VW</Marca>
+        <Modelo TipoDato="String">Malacaton</Modelo>
+        <Furgoneta>
+            <Plazas TipoDato="Integer">5</Plazas>
+            <Pma TipoDato="Integer">5000</Pma>
+        </Furgoneta>
+    </Vehiculo>
+    <Vehiculo Matricula="6325KGB" Tipo="Turismo">
+        <Marca TipoDato="String">Peugeot</Marca>
+        <Modelo TipoDato="String">508 GT</Modelo>
+        <Turismo>
+            <Cilindrada TipoDato="Integer">2000</Cilindrada>
+        </Turismo>
+    </Vehiculo>
+    <Vehiculo Matricula="9090CPD" Tipo="Turismo">
+        <Marca TipoDato="String">Rover</Marca>
+        <Modelo TipoDato="String">45</Modelo>
+        <Turismo>
+            <Cilindrada TipoDato="Integer">2000</Cilindrada>
+        </Turismo>
+    </Vehiculo>
+    <Vehiculo Matricula="1234BCD" Tipo="Autobus">
+        <Marca TipoDato="String">Longo</Marca>
+        <Modelo TipoDato="String">Arto</Modelo>
+        <Autobus>
+            <Plazas TipoDato="Integer">100</Plazas>
+        </Autobus>
+    </Vehiculo>
+    <Vehiculo Matricula="2325CPD" Tipo="Turismo">
+        <Marca TipoDato="String">Citroen</Marca>
+        <Modelo TipoDato="String">C5</Modelo>
+        <Turismo>
+            <Cilindrada TipoDato="Integer">1900</Cilindrada>
+        </Turismo>
+    </Vehiculo>
+</Vehiculos>
