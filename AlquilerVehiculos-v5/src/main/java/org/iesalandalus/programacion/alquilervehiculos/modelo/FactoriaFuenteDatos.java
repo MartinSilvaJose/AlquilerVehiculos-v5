@@ -4,6 +4,7 @@ import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.IFuenteDat
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.ficheros.FuenteDatosFicheros;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.memoria.FuenteDatosMemoria;
 import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.mongodb.FactoriaFuenteDatosMongoDB;
+import org.iesalandalus.programacion.alquilervehiculos.modelo.negocio.mysql.FactoriaFuenteDatosMysql;
 
 public enum FactoriaFuenteDatos {
 	MEMORIA{
@@ -24,7 +25,13 @@ public enum FactoriaFuenteDatos {
 		IFuenteDatos crear() {
 			return new FactoriaFuenteDatosMongoDB();
 		}
-	};
+	},
+	MYSQL{
+			IFuenteDatos crear() {
+				return new FactoriaFuenteDatosMysql();
+			}
+		};
+	
 	abstract IFuenteDatos crear();
 	
 }

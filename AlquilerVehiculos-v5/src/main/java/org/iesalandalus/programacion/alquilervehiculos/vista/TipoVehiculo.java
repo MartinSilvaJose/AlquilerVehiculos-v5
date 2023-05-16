@@ -12,6 +12,9 @@ public enum TipoVehiculo {
 	
 	private String nombre="";
 	
+	public String getNombre() {
+		return nombre;
+	}
 	private TipoVehiculo(String nombre) {
 		this.nombre=nombre;
 	}

@@ -31,9 +31,9 @@ public class Furgoneta extends Vehiculo{
 		return this.plazas;
 	}
 	public void setPlazas(int plazas) {
-		if(plazas<3 || plazas>8) {
-			throw new IllegalArgumentException("ERROR: El número de plazas no se corresponde con una furgoneta");
-		}
+//		if(plazas<3 || plazas>8) {
+//			throw new IllegalArgumentException("ERROR: El número de plazas no se corresponde con una furgoneta");
+//		}
 		
 		this.plazas = plazas;
 	}
@@ -44,9 +44,9 @@ public class Furgoneta extends Vehiculo{
 		return this.pma;
 	}
 	public void setPma(int pma) {
-		if(pma<3500 || pma>7500) {
-			throw new IllegalArgumentException("ERROR: El PMA no se corresponde con una furgoneta");
-		}
+//		if(pma<3500 || pma>7500) {
+//			throw new IllegalArgumentException("ERROR: El PMA no se corresponde con una furgoneta");
+//		}
 		
 		this.pma = pma;
 	}

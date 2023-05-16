@@ -238,13 +238,16 @@ public class ControladorEscenaSecundaria {
     	
     	if(!nuevoCliente.trim().isEmpty() && !nuevoTelefono.trim().isEmpty()) {
     		try {
-			controladorMVC.modificar(cliente, nuevoCliente, nuevoTelefono);
-			Dialogos.mostrarDialogoInformacion("Modificar cliente", "Se ha modificado el cliente correctamente");
-			salir(this.btnModificarCliente);
-		} catch (OperationNotSupportedException e) {
-			Dialogos.mostrarDialogoError("Modificar cliente",e.getMessage());
-		}
+    			controladorMVC.modificar(cliente, nuevoCliente, nuevoTelefono);
+			
+    			Dialogos.mostrarDialogoInformacion("Modificar cliente", "Se ha modificado el cliente correctamente");
+    			salir(this.btnModificarCliente);
+    		} catch (OperationNotSupportedException e) {
+    			Dialogos.mostrarDialogoError("Modificar cliente",e.getMessage());
     		}
+    	}else {
+    		Dialogos.mostrarDialogoInformacion("Modificar cliente", "Debe de rellenar todos los campos para modificarlos");
+    	}
     }
     @FXML
     void insertarCliente(ActionEvent event) {

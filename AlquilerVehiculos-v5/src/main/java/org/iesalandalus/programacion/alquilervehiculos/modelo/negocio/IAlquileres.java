@@ -23,8 +23,7 @@ public interface IAlquileres {
 
 	int getCantidad();
 
-	void comprobarAlquiler(Cliente cliente, Vehiculo vehiculo, LocalDate fechaAlquiler)
-			throws OperationNotSupportedException;
+	void comprobarAlquiler(Cliente cliente, Vehiculo vehiculo, LocalDate fechaAlquiler)throws OperationNotSupportedException;
 
 	void insertar(Alquiler alquiler) throws OperationNotSupportedException;
 

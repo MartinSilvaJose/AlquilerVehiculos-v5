@@ -402,7 +402,6 @@ public class ControladorEscenaPrincipal {
     void seleccionarCliente(MouseEvent event) {
 		try {
 		  	Cliente clienteSeleccionado=new Cliente(tvClientes.getSelectionModel().getSelectedItem());
-	    	System.out.println(clienteSeleccionado);
 	    	if(clienteSeleccionado!=null) {
 	        	restablecerTablas();
 	    		List<Alquiler> alquileresCliente=new ArrayList<>(controladorMVC.getAlquileres(clienteSeleccionado));
